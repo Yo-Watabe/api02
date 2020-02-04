@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+    <head>
+            <meta charset="UTF-8">
+            <title>音声合成</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <h1>音声認識</h1>
+        <a href="https://www.google.com/chrome/demos/speech.html">Web Speech API Demonstration </a>
+        <h1>音声合成</h1>
+        <p id="msg"></p>
+        <textarea id="text" rows="20" cols="100">
+国境の長いトンネルを抜けると雪国であった。夜の底が白くなった。信号所に汽車が止まった。
+　向側の座席から娘が立って来て、島村の前のガラス窓を落した。雪の冷気が流れこんだ。娘は窓いっぱいに乗り出して、遠くへ呼ぶように、
+「駅長さあん、駅長さあん」
+　明りをさげてゆっくり雪を踏んで来た男は、襟巻で鼻の上まで包み、耳に帽子の毛皮を垂れていた。
+　もうそんな寒さかと島村は外を眺めると、鉄道の官舎らしいバラックが山裾に寒々と散らばっているだけで、雪の色はそこまで行かぬうちに闇に呑まれてい　た。
+「駅長さん、私です、御機嫌よろしゅうございます」
+「ああ、葉子さんじゃないか。お帰りかい。また寒くなったよ」
+「弟が今度こちらに勤めさせていただいておりますのですってね。お世話さまですわ」
+
+        </textarea>
+        <br/>
+
+        <select id="voice-names"></select>
+        <br/>
+        <input id="rate" type="range" min="0" max="2" step="0.25" value="1"> (speed)
+        <br/>
+        <button id="speak-btn">speak</button>
+        <button id="pause-btn">pause</button>
+        <button id="resume-btn">resume</button>
+        <button id="cancel-btn">cancel</button>
+
+        <script src="app.js.txt"></script>
+    <body>
+<html>
